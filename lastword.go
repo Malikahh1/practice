@@ -1,14 +1,13 @@
 package main
 
-func LastWord (s string) string {
-	count := 0
-
-	for i := 0; i < len(s); i++{
-		if s[i] != ' '{
-			count ++
-		} else {
-			break
-		}
+func LastWord(s string) string {
+	i := len(s) - 1
+	for i >= 0 && s[i] == ' ' {
+		i--
 	}
-	return s[count+1:]
+	j := i
+	for i >= 0 && s[i] != ' ' {
+		i--
+	}
+	return s[i+1:j+1] + "\n"
 }

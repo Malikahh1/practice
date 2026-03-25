@@ -6,5 +6,5 @@ func Printifnot(str string) string {
 	} else {
 		return "Invalid input\n"
 	}
-	
+
 }

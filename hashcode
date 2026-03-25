@@ -1,16 +1,16 @@
-package main
+package 
 
 func Hashcode(dec string) string {
 	size := len(dec)
 	hashed := ""
 
 	for _, char := range dec {
-		hash := (int(char) + size) % 127
+		hash := (int(char) + size) % 126
 		if hash < 32 || hash > 126 {
-			hash += 33
+			hash +=33
 		}
-		hashed += string(hash)
+		hashed +=string(hash)
 	}
 	return hashed
-
+	
 }

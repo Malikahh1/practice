@@ -1,12 +1,12 @@
 package main
 
 func FirstWord(s string) string {
-	word := ""
+	str := ""
 	for _, r := range s {
 		if r == ' ' {
 			break
 		}
-		word += string(r)
+		str +=string(r)
 	}
-	return word + "\n"
+	return str + "\n"
 }

@@ -11,3 +11,11 @@ func Retainfirsthalf(str string) string {
 	return str[:half]
 
 }
+
+// func main () {
+// 	if len(str) <= 1 {
+// 		return str
+// 	}
+
+// 	return str[:len(str)/2]
+// }
