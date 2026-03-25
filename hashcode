@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func Hashcode(dec string) string {
+	str := ""
+
+	for _, r := range dec {
+		hash := (int(r) + len (dec)%127
+
+		if hash < '!' {
+			hash +=33
+		}
+		
+		str += string(rune(hash)))
+
+	}
+	return str 
+
+	
+}

@@ -1,0 +1,10 @@
+package main
+
+func Printifnot(str string) string {
+	if len(str) < 3 {
+		return "G\n"
+	} else {
+		return "Invalid input\n"
+	}
+	
+}
