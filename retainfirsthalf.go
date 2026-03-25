@@ -1,7 +1,5 @@
 package main
 
-
-
 func Retainfirsthalf(str string) string {
 	if str == "" {
 		return ""
@@ -9,7 +7,7 @@ func Retainfirsthalf(str string) string {
 	if len(str) == 1 {
 		return str
 	}
-	halflength := len(str)/ 2
-	return str[:halflength]
+	half := len(str) / 2
+	return str[:half]
 
 }
