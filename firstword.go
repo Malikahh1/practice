@@ -1,13 +1,12 @@
 package main
 
-func FirstWord (s string) string{
-	str := ""
-	for i := 0; i < len(s); i++{
-		if s [i] != ' ' {
-			str += string(s[i])
-		}else {
+func FirstWord(s string) string {
+	word := ""
+	for _, r := range s {
+		if r == ' ' {
 			break
 		}
+		word += string(r)
 	}
-	return str
+	return word + "\n"
 }
