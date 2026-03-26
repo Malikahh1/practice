@@ -1,10 +1,8 @@
 package main
 
-
-
 func Printif(str string) string {
-	if len (str) == 0 || len(str) >= 3{
+	if len(str) == 0 || len(str) >= 3 {
 		return "G\n"
 	}
-		return "invalid input\n"
+	return "Invalid Input"
 }
