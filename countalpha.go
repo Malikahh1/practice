@@ -1,12 +1,13 @@
 package main
 
-func CountAlpha(s string) int {
-	count := 0
-	for _, c := range s {
-		if (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') {
-			count++
+
+func CountAlpha(str string) int {
+	Count := 0
+	for _, i:= range str {
+		if (i >= 'a' && i <= 'z') || (i >= 'A' && i <= 'Z') {
+			Count++
 		}
 	}
-	return count
-
+	return Count 
 }
+

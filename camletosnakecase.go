@@ -1,32 +1,33 @@
 package main
 
-func CamelCaseToSnake(s string) string {
+func CamelCaseToSnake (s string) string {
 	if s == "" {
 		return ""
 	}
-	for i := 0; i < len(s); i++ {
+
+	for i := 0; i < len(s); i++{
 		c := s[i]
-		// must contain only letter
+
 		if !(c >= 'a' && c <= 'z') && !(c >= 'A' && c <= 'Z') {
 			return s
 		}
-		// contain two capital latter consecutively
-		if i > 0 && (c >= 'A' && c <= 'Z') && (s[i-1] >= 'A' && s[i-1] <= 'Z') {
-			return s
+
+		if i > 0 && (c >= 'A' && c <= 'Z') && (s[i-1] >= 'A' && s[i-1] <= 'Z'){
+			return  s
 		}
-		// if it ends in capital latter
+
 		if i == len(s)-1 && c >= 'A' && c <= 'Z' {
 			return s
 		}
-
 	}
 	result := ""
-	for i := 0; i < len(s); i++ {
+	for i := 0; i < len(s); i++{
 		if s[i] >= 'A' && s[i] <= 'Z' && i != 0{
-			result += "_"
+			result +="_"
 		}
-		 result += string(s[i])
+		result += string(s[i])
 	}
 	return result
 
+	
 }

@@ -7,7 +7,7 @@ func Digilen(n, base int)int{
 		return -1
 	 }
 	 if n < 0 {
-		n = n * -1
+		n = -n
 	 }
 	 counter := 0
 	 for n > 0 {
