@@ -1,7 +1,5 @@
 package main
 
-
-
 func RepeatAlpha (s string) string {
 	result := ""
 	count := 1

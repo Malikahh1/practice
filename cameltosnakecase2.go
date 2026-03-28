@@ -1,4 +1,4 @@
-package 
+package main
 
 func CamelToSnakeCase(s string) string {
 	if s == "" || !Iscamelcase(s) {
