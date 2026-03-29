@@ -6,6 +6,7 @@ func CamelCaseToSnake(s string) string {
 	}
 	for i := 0; i < len(s); i++ {
 		c := s[i]
+
 		// must contain only letter
 		if !(c >= 'a' && c <= 'z') && !(c >= 'A' && c <= 'Z') {
 			return s
@@ -18,15 +19,15 @@ func CamelCaseToSnake(s string) string {
 		if i == len(s)-1 && c >= 'A' && c <= 'Z' {
 			return s
 		}
-
 	}
+
 	result := ""
 	for i := 0; i < len(s); i++ {
-		if s[i] >= 'A' && s[i] <= 'Z' && i != 0{
+		if s[i] >= 'A' && s[i] <= 'Z' && i != 0 {
 			result += "_"
 		}
-		 result += string(s[i])
+		result += string(s[i])
+
 	}
 	return result
-
 }

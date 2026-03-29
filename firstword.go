@@ -2,11 +2,11 @@ package main
 
 func FirstWord(s string) string {
 	str := ""
-	for _, r := range s {
-		if r == ' ' {
+	for _, i := range s{
+		if i == ' '{
 			break
 		}
-		str +=string(r)
+		str += string(i)
 	}
 	return str + "\n"
 }
