@@ -1,8 +1,8 @@
 package main
 
 func FindPrevPrime(nb int) int {
-	for i := nb; i >= 2; i-- {
-		if Isprime(i) {
+	for i := nb; i >= 2; i--{
+		if Isprime(i){
 			return i
 		}
 	}
@@ -13,8 +13,8 @@ func Isprime(n int) bool {
 	if n <= 1 {
 		return false
 	}
-	for i := 2; i*i <= n; i++ {
-		if n%i == 0 {
+	for i := 2; i*i > 2; i++{
+		if n%1 == 0 {
 			return false
 		}
 	}
