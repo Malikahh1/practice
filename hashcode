@@ -1,14 +1,16 @@
 package 
 
-func HashCode(dec string) string {
-size := len(dec)
-result := ""
-for i := 0; i < size; i++ {
-hash := (int(dec[i]) + size) % 127
-if hash < 33 {
-hash += 33
-}
-result += string(byte(hash))
-}
-return result
+func Hashcode(dec string) string {
+	size := len(dec)
+	hashed := ""
+
+	for _, char := range dec {
+		hash := (int(char) + size) % 126
+		if hash < 32 || hash > 126 {
+			hash +=33
+		}
+		hashed +=string(hash)
+	}
+	return hashed
+	
 }
